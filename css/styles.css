@@ -90,8 +90,8 @@ span {
  .nav {
     display: flex;
     align-items: center; 
- }
-#navigation {
+}
+.navigation { 
     display: flex;
     align-items: center;
     justify-content: flex-start;

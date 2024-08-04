@@ -4,20 +4,19 @@ body {
     color: #434455;
 }
 .container { 
-    max-width: 1440px;
-    padding: left 16px;
-    padding-right: 16px;  
-    margin-left:  auto;
-    margin-right:  auto;
+    display: flex;
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+   
     }
 .header {
         border-bottom: 1px solid #e7e9fc;
 }
 .header-container {
     display: flex;
-    width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
+    align-items: center;
+    
  }
 
 img {
@@ -27,7 +26,10 @@ img {
 a {
     text-decoration: none;
     color: inherit;
-    
+
+h1 {
+    max-width: 496px;
+}
 }
 h1,
 h2,
@@ -49,6 +51,12 @@ ul, ol {
 
 button {
     cursor: pointer;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none; 
+    background-color: #4d5ae5;
+    border-radius: 4px;
 }
 
 h2 {
@@ -149,6 +157,31 @@ span {
     background-color: #2e2f42;
     width: 1440px;
     height: 600px;
+    padding: 188px 0;
+}
+.section-two {
+    padding: 120px 0;
+}
+.list {
+    display: flex;
+    gap: 24px;
+}
+.list-content {
+    flex-basis: calc((100% - 3 * 24px) / 4)
+}
+h3 {
+    margin-bottom: 8px;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap; 
 }
 .mainlogo {
     font-weight: 700;
@@ -183,11 +216,25 @@ span {
     background-color: #404bbf;
 }
 .section-three {
-    background-color: #F4F4FD
+    background-color: #F4F4FD;
+    padding: 120px 0 ;
+
+}
+h2 {
+    margin-bottom: 72px;
 }
 .team-list {
     background-color: #FFFFFF;
-
+    flex-basis: calc((100% - 3 * 24px) / 4);
+    border-top-left-radius: 0px; border-top-right-radius: 0px ; border-top-right-radius: 4px; border-bottom-left-radius:4px;
+      }
+  
+.listofteam {
+    display: flex;
+    gap: 24px;
+}
+.personaldaten {
+    padding: 32px 0;
 }
 .portfolio-list {
     background-color: #F4F4FD;
@@ -241,6 +288,8 @@ span {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    text-align: center;
+    margin-bottom: 8px;
 }
 .foto-text {
     font-weight: 400;

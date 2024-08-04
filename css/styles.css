@@ -4,19 +4,20 @@ body {
     color: #434455;
 }
 .container { 
-    display: flex;
-    max-width: 1158px;
+   
+    width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
    
     }
-.header {
-        border-bottom: 1px solid #e7e9fc;
-}
+
 .header-container {
     display: flex;
     align-items: center;
-    
+    border-bottom: 1px solid #e7e9fc
+ }
+ .header-div {
+    display: flex;
  }
 
 img {
@@ -27,10 +28,8 @@ a {
     text-decoration: none;
     color: inherit;
 
-h1 {
-    max-width: 496px;
 }
-}
+
 h1,
 h2,
 h4,
@@ -190,6 +189,7 @@ h3 {
     text-align: center;
     letter-spacing: 0.02em;
     color: #fff;
+    max-width: 496px;
 }
 .button {
     font-weight: 500;
@@ -208,6 +208,7 @@ h3 {
     width: 169px;
     height: 56px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    display: block;
 }
 .button:focus {
     background-color: #404bbf;
@@ -220,6 +221,16 @@ h3 {
     padding: 120px 0 ;
 
 }
+.section-four {
+    padding: 120px 0 120px 0;
+}
+.listofportfolio {
+    display: flex;
+    flex-wrap: wrap; 
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
 h2 {
     margin-bottom: 72px;
 }
@@ -238,6 +249,12 @@ h2 {
 }
 .portfolio-list {
     background-color: #F4F4FD;
+    width: calc((100% - 48px) / 3)
+}
+.app-content {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 .page-tittle {
     font-weight: 500;
@@ -263,6 +280,7 @@ h2 {
     text-align: center;
     text-transform: capitalize;
     color:  #2e2f42;
+    margin-bottom: 72px; 
 }
 .tittle {
     font-weight: 500;
@@ -297,6 +315,7 @@ h2 {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    text-align: center;
 }
 .foto-tittle {
     font-weight: 500;

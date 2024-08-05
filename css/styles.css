@@ -27,6 +27,7 @@ img {
 a {
     text-decoration: none;
     color: inherit;
+    display: inline-block;
 
 }
 
@@ -333,6 +334,7 @@ h2 {
 }
 .footer {
     background-color: #2e2f42;
+    padding: 100px 0;
 }
 .footer-text {
     font-weight: 400;
@@ -340,6 +342,8 @@ h2 {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+    max-width: 264px;
+   
 }
 .footer-logo {
     color: #f4f4fd;
@@ -349,4 +353,8 @@ h2 {
     line-height: 1.7;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+}
+.mainlink {
+    display: inline-block;
+    margin-bottom: 16px;
 }
